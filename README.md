@@ -5,4 +5,4 @@ Process for the building of new tables/change the exisiting database.
 
 2. Once you have the changes that you want begin testing your changes first in a development environment, the QA environmnet, then UAT environment. All down stream testing on the application should be approved by the relevent stakeholders and application owners/qa team before you can move on to the next environment and eventurally production.
 
-3. If all testing has worked and there are no issues you can orangise the deployment to production/live database. When deploying the changes find a maintience window when there will be no user activity. When doing this start by taking a pre deployment database backup. 
+3. If all testing has worked and there are no issues you can orangise the deployment to production/live database. When deploying the changes find a maintience prevent users connecting and accidently making changes to tables you might be altering. window when there will be no user activity. When doing this start by taking a pre deployment database backup. Deploy your changes. Do a few sanity checks then close the maintaince.
