@@ -54,4 +54,12 @@ CREATE TABLE POST_IMAGES (
     POST_IMAGE_URL VARCHAR2(400)
 );
 
+--maybe indexing for scaliblity?
+CREATE INDEX idx_users_location ON USERS(USER_LOCATION_LAT, USER_LOCATION_LNG);
+CREATE INDEX idx_businesses_location ON BUSINESSES(LOCATION_LAT, LOCATION_LNG);
+
+CREATE INDEX idx_posts_user_id ON POSTS(USER_ID);
+CREATE INDEX idx_posts_business_id ON POSTS(BUSINESS_ID);
+
+
 COMMIT;
