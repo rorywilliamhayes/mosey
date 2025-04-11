@@ -65,7 +65,7 @@ BEGIN
   RETURN earth_radius_km * 2 * ATAN2(SQRT(a), SQRT(1 - a));
 END;
 /
-
+commit;
 
 SELECT *
 FROM (
